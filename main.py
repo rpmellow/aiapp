@@ -1,8 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Request
 from fastapi.responses import HTMLResponse, StreamingResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
-from pypdf import PdfReader, PdfWriter
-from PyPDF2 import PdfReader as PR, PdfWriter as PW
 from fastapi.middleware.cors import CORSMiddleware
 from io import BytesIO
 from pydantic import BaseModel
