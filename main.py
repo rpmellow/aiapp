@@ -26,7 +26,7 @@ class ChatInput(BaseModel):
 # Serve the HTML frontend
 @app.get("/", response_class=HTMLResponse)
 async def get_chat_page(request: Request):
-    return templates.TemplateResponse("chat.html", {"request": request})
+    return templates.TemplateResponse("index.html", {"request": request})
 
 # API endpoint for chat
 @app.post("/chat")
