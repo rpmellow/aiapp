@@ -5,3 +5,5 @@ pip3 install -r requirements.txt
 curl -fsSL https://ollama.com/install.sh | sh
 ollama pull llama3.2:1b
 pip install ollama
+sudo apt install uvicorn
+uvicorn main:app --host 0.0.0.0 --port 8080
