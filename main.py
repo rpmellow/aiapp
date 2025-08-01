@@ -42,7 +42,7 @@ async def chat_api(input: ChatInput):
     ])
     user_text = response['message']['content']
 
-    return {"response": f"'{user_text}'"}
+    return {"response": f"{user_text}"}
 
 
 
