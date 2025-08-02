@@ -36,10 +36,6 @@ async def chat_api(input: ChatInput):
 
     response = ollama.chat(model='llama3.2:1b', messages=[
       {
-        'role': 'system',
-        'content': 'Respond clearly and concisely. Do not exceed 200 words.',
-       },
-      {
         'role': 'user',
         'content': input.text,
       },
